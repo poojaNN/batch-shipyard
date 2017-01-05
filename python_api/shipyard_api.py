@@ -1,15 +1,12 @@
 import shipyard as sy
-# from shipyard_api import *
 from templates import *
 import convoy.fleet as cf
-import secrets
 import logging
 import json
 from itertools import product
 from os.path import join, split
 
 logger = logging.getLogger('shipyard')
-
 
 class ApiContext(sy.CliContext):
     def __init__(self,
